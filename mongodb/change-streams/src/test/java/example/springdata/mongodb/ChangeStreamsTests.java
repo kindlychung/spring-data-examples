@@ -21,7 +21,6 @@ import static org.springframework.data.mongodb.core.query.Criteria.*;
 import static org.springframework.data.mongodb.core.query.Query.*;
 import static org.springframework.data.mongodb.core.query.Update.*;
 
-import example.springdata.mongodb.util.EmbeddedMongo;
 import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
 

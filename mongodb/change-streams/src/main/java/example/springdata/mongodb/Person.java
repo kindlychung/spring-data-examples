@@ -16,7 +16,6 @@
 package example.springdata.mongodb;
 
 import lombok.Data;
-
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -32,7 +31,23 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @Data
 class Person {
 
-	@Id ObjectId id;
+    public ObjectId getId() {
+        return id;
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    @Id ObjectId id;
 
 	@Field("first_name") private String firstname;
 
